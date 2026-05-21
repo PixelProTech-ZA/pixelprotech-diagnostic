@@ -12,7 +12,7 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npm run build:win
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: PixelProTech-Diagnostic-Windows
           path: dist/*.exe
